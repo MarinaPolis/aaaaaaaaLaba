@@ -97,6 +97,7 @@ namespace Lab1_Constructors
     }
     public class PercussionInstrument : Instrument // ударні інстурменти 
     {
+        int percussionInstrumentNumber = 0;
         public PercussionInstrument() // дефолтний конструктор
         {
             Console.WriteLine("Default constructor PercussionInstrument is working");
@@ -114,6 +115,7 @@ namespace Lab1_Constructors
 
     public class Drum:PercussionInstrument // барабан наслідується від ударних
     {
+        int drumInstrumentNumber = 0;
         public Drum() // дефолтний конструктор
         {
             Console.WriteLine("Default constructor Drum is working");
@@ -197,6 +199,7 @@ namespace Lab1_Constructors
     }
     public class Piano : StringInstrument // фортепіано наслідується від струнних
     {
+        int numberOfPiano;
         public Piano() :base(88) 
         {
             Console.WriteLine("Default constructor Piano is working");
